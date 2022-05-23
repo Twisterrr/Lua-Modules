@@ -129,6 +129,7 @@ function Series:createInfobox(frame)
 			type = args.type,
 			location = Locale.formatLocation({city = args.city, country = args.country}),
 			location2 = Locale.formatLocation({city = args.city2, country = args.country2}),
+			location3 = Locale.formatLocation({city = args.city3, country = args.country3}),
 			previous = args.previous,
 			previous2 = args.previous2,
 			next = args.next,
@@ -163,6 +164,7 @@ function Series:createInfobox(frame)
 				weibo = Links.makeFullLink('weibo', args.weibo),
 				vk = Links.makeFullLink('vk', args.vk),
 				youtube = Links.makeFullLink('youtube', args.youtube),
+				trovo = Links.makeFullLink('trovo', args.trovo),
 			}),
 		}
 		lpdbData = self:_getIconFromLeagueIconSmall(frame, lpdbData)
